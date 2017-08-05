@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <meta charset="utf-8">
+  <!-- Latest compiled and minified JQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- Latest compiled and minified JS -->
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css" type="text/css" />
   <script type="text/javascript" src="app.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="options-box">
+<div class="row">
+      <div class="col-xs-3 options-box">
         <h1>Find Your New NYC Home</h1>
         <div>
           <input id="show-listings" type="button" value="Show Listings">
@@ -51,13 +58,15 @@
         </div>
       </div>
       
-      <div id="right-panel"></div>
-      <div id="map"></div>
-      
+      <div id="map" class="col-xs-6"></div>
+        
+      <div id="right-panel" class="col-xs-3"></div>
+
+    </div>
     <script async defer
         src=
         "https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyCTz5eaDlrMoLv_6loLJOmjbccNaeqng34&v=3&callback=initMap">
     </script>
-
+  
   </body>
 </html>

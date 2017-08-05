@@ -467,6 +467,8 @@ var map;
     // Get mode again from the user entered value.
     var mode = document.getElementById('mode').value;
     
+    var panel = document.getElementById('right-panel'); 
+    
     directionsService.route({
       // The origin is the passed in marker's position.
       origin: origin,
@@ -477,13 +479,13 @@ var map;
       if (status === google.maps.DirectionsStatus.OK) {
         var directionsDisplay = new google.maps.DirectionsRenderer({
           map: map,
+          panel: panel,
           directions: response,
           draggable: true,
           polylineOptions: {
             strokeColor: 'green'
           }
         });
-        document.getElementById('right-panel').innerHTML = directionsDisplay.directions;
       } else {
         window.alert('Directions request failed due to ' + status);
       }

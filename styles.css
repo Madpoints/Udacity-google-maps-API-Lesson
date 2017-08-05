@@ -6,10 +6,14 @@
     margin: 0;
     padding: 0;
   }
-
-  .container {
+    
+  .col-xs-3 {
+    padding-right: 0px;
+  }
+  
+  .row {
     height: 100%;
-    position: relative;
+    
   }
 
   input {
@@ -30,15 +34,9 @@
   #hide-listings,
   #show-listings {
     width: 48%;
+    margin-left: 1px;
   }
   
-  #right-panel {
-        height: 100%;
-        float: right;
-        width: 390px;
-        overflow: auto;
-    }
-
   hr {
     background: #D0D7D9;
     height: 1px;
@@ -47,11 +45,7 @@
   }
 
   #map {
-    bottom:0px;
     height: 100%;
-    left: 362px;
-    position: absolute;
-    right: 0px;
   }
 
   .options-box {
@@ -60,9 +54,7 @@
     border-radius: 3px;
     height: 100%;
     line-height: 35px;
-    padding: 10px 10px 30px 10px;
     text-align: left;
-    width: 340px;
   }
 
   #pano {
@@ -74,15 +66,36 @@
   #search-within-time-text {
     width: 84%;
   }
+  
+  #right-panel {
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+  }
+
+  #right-panel select, #right-panel input {
+    font-size: 15px;
+  }
+
+  #right-panel select {
+    width: 100%;
+  }
+
+  #right-panel i {
+    font-size: 12px;
+  }
+  #right-panel {
+    height: auto;
+    padding-left: 0;
+  }
 
   .text {
     font-size: 12px;
   }
 
   #toggle-drawing {
-    width: 27%;
+    width: 48%;
     position: relative;
-    margin-left: 10px;
+    margin-left: 1px;
   }
 
   #zoom-to-area-text {
